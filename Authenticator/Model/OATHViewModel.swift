@@ -193,7 +193,7 @@ class OATHViewModel: NSObject, YKFManagerDelegate {
     /*!
      * Allows to detect whether credentials list empty because device doesn't have any credentials or it's not loaded from device yet
      */
-    var state: State = {
+    var state: YubiKeyState = {
         if !YubiKitDeviceCapabilities.supportsMFIAccessoryKey
             && !YubiKitDeviceCapabilities.supportsISO7816NFCTags
             && !YubiKitDeviceCapabilities.supportsSmartCardOverUSBC {
@@ -876,7 +876,7 @@ enum OperationName : String {
     case getKeyVersion = "get version"
 }
 
-enum State {
+enum YubiKeyState {
     case idle
     case loading
     case locked
