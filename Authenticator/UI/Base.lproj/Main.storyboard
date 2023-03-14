@@ -644,14 +644,14 @@ All rights reserved.</string>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WaV-Pv-SDy">
-                                    <rect key="frame" x="19" y="0.0" width="335" height="27"/>
+                                    <rect key="frame" x="18" y="0.0" width="334" height="27"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szl-yL-4ir">
-                                    <rect key="frame" x="20" y="170" width="335" height="30"/>
+                                    <rect key="frame" x="18" y="170" width="334" height="30"/>
                                     <state key="normal" title="UnwindButton"/>
                                     <connections>
                                         <segue destination="fSX-BI-gQd" kind="unwind" identifier="unwindToKeyConfiguration" unwindAction="unwindToKeyConfigurationWithSegue:" id="SFl-hQ-GJS"/>
@@ -775,7 +775,7 @@ All rights reserved.</string>
         <!--YubiKey configuration-->
         <scene sceneID="jUO-bC-anG">
             <objects>
-                <tableViewController restorationIdentifier="yubikeyConfiguration" title="YubiKey configuration" id="09D-Aw-j1I" customClass="ConfigurationController" customModule="Authenticator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="yubikeyConfiguration" storyboardIdentifier="ConfigurationController" title="YubiKey configuration" id="09D-Aw-j1I" customClass="ConfigurationController" customModule="Authenticator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="aqu-ss-YQ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -819,17 +819,17 @@ All rights reserved.</string>
                             <tableViewSection headerTitle="INFORMATION" id="yed-kd-amP">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="y9d-ef-M2r">
-                                        <rect key="frame" x="20" y="244.33333206176758" width="335" height="133.66667175292969"/>
+                                        <rect key="frame" x="20" y="244.33333206176758" width="335" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y9d-ef-M2r" id="N1J-CN-YzV">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="134"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="135"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEI-Vx-DRc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="133.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="135"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KT1-7K-VIa" userLabel="Top content">
-                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="66"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="66.666666666666671"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Device type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llv-60-0FB">
                                                                     <rect key="frame" x="15" y="9.9999999999999982" width="90.333333333333329" height="20.333333333333329"/>
@@ -838,7 +838,7 @@ All rights reserved.</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAw-dv-zeA">
-                                                                    <rect key="frame" x="15.000000000000002" y="35.333333333333336" width="27.666666666666671" height="20.666666666666664"/>
+                                                                    <rect key="frame" x="15.000000000000002" y="35.333333333333336" width="27.666666666666671" height="21.333333333333336"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -855,21 +855,21 @@ All rights reserved.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-1b-reC" userLabel="Horizontal divider">
-                                                            <rect key="frame" x="0.0" y="66" width="335" height="1"/>
+                                                            <rect key="frame" x="0.0" y="66.666666666666671" width="335" height="1"/>
                                                             <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="OaS-Ay-Lxr"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5De-9k-ng0" userLabel="Vertical divider">
-                                                            <rect key="frame" x="167.66666666666666" y="67" width="1" height="66.666666666666686"/>
+                                                            <rect key="frame" x="167.66666666666666" y="67.666666666666686" width="1" height="67.333333333333314"/>
                                                             <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="1" id="Oua-1j-Z26"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgO-iN-c0D" userLabel="Right content">
-                                                            <rect key="frame" x="168.66666666666663" y="67" width="166.33333333333337" height="66.666666666666686"/>
+                                                            <rect key="frame" x="168.66666666666663" y="67.666666666666686" width="166.33333333333337" height="67.333333333333314"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Serial number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzm-p7-Lmb">
                                                                     <rect key="frame" x="14.999999999999993" y="9.9999999999999982" width="105.33333333333331" height="20.333333333333329"/>
@@ -878,7 +878,7 @@ All rights reserved.</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBv-4M-eos">
-                                                                    <rect key="frame" x="15.000000000000002" y="36.333333333333329" width="27.666666666666671" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="15.000000000000002" y="36.333333333333329" width="27.666666666666671" height="21"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -895,7 +895,7 @@ All rights reserved.</string>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGj-jJ-pPx" userLabel="Left content">
-                                                            <rect key="frame" x="0.0" y="67" width="167.66666666666666" height="66.666666666666686"/>
+                                                            <rect key="frame" x="0.0" y="67.666666666666686" width="167.66666666666666" height="67.333333333333314"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Firmware" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFH-4H-WRy">
                                                                     <rect key="frame" x="15" y="9.9999999999999982" width="70" height="20.333333333333329"/>
@@ -904,7 +904,7 @@ All rights reserved.</string>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGj-16-s0W">
-                                                                    <rect key="frame" x="15.000000000000002" y="36.333333333333329" width="27.666666666666671" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="15.000000000000002" y="36.333333333333329" width="27.666666666666671" height="21"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -956,7 +956,7 @@ All rights reserved.</string>
                             <tableViewSection headerTitle="Configuration" id="C5n-jq-Mk9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="uP5-O2-d0d" style="IBUITableViewCellStyleDefault" id="WD1-EX-IYQ" userLabel="Toggle One-Time password">
-                                        <rect key="frame" x="20" y="434.00000190734863" width="335" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="435.33333015441895" width="335" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WD1-EX-IYQ" id="8u6-79-GWX">
                                             <rect key="frame" x="0.0" y="0.0" width="304.66666666666669" height="43.666667938232422"/>
@@ -976,7 +976,7 @@ All rights reserved.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="03k-jY-TEC" style="IBUITableViewCellStyleDefault" id="AR8-8Z-HlN" userLabel="Passwords and reset">
-                                        <rect key="frame" x="20" y="477.66666984558105" width="335" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="478.99999809265137" width="335" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AR8-8Z-HlN" id="TxQ-Ug-Vr0">
                                             <rect key="frame" x="0.0" y="0.0" width="304.66666666666669" height="43.666667938232422"/>
@@ -996,7 +996,7 @@ All rights reserved.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="D3g-ds-RCu" style="IBUITableViewCellStyleDefault" id="svK-Xu-OrL" userLabel="Application settings">
-                                        <rect key="frame" x="20" y="521.33333778381348" width="335" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="522.66666603088379" width="335" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="svK-Xu-OrL" id="qml-JJ-Spa">
                                             <rect key="frame" x="0.0" y="0.0" width="304.66666666666669" height="43.666667938232422"/>
@@ -1016,7 +1016,7 @@ All rights reserved.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="iH3-4d-Rv5" detailTextLabel="9lL-ZS-odE" style="IBUITableViewCellStyleValue1" id="Uv3-td-07t" userLabel="Smart card extension">
-                                        <rect key="frame" x="20" y="565.0000057220459" width="335" height="43.666667938232422"/>
+                                        <rect key="frame" x="20" y="566.33333396911621" width="335" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uv3-td-07t" id="UC4-yB-7i6">
                                             <rect key="frame" x="0.0" y="0.0" width="304.66666666666669" height="43.666667938232422"/>
@@ -1259,16 +1259,16 @@ All rights reserved.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KcB-wR-xCx">
-                                <rect key="frame" x="-1" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="-2" y="-1" width="376" height="812"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-XV-Zpt">
-                                        <rect key="frame" x="93" y="240" width="189" height="77"/>
+                                        <rect key="frame" x="92" y="240" width="190" height="77"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" name="Color11"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the back button to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pK-HU-1WC">
-                                        <rect key="frame" x="75" y="334" width="231" height="20"/>
+                                        <rect key="frame" x="75" y="334" width="230" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -1712,7 +1712,7 @@ All rights reserved.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UPN-tw-Bce"/>
+        <segue reference="0dB-Xx-crT"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="YubiBlue"/>
     <resources>
